@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Express</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <h2>To do list</h2>
+    <form name="tasksForm">
+        <div class="form-group">
+            <label for="task">Add task:</label>
+            <input class="form-control" data-test="new-todo" name="task" />
+        </div>
+        <div class="panel-body">
+            <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+            <a id="reset" class="btn btn-sm btn-primary" data-clear="clear-list">Clear list</a>
+        </div>
+    </form>
+    <table class="table table-condensed table-striped table-bordered">
+        <thead><tr><th>Id</th><th>Task</th></tr></thead>
+        <tbody id="table-body" class="table-body">
+        </tbody>
+    </table>
+    <script src="./app.js"></script>
+</body>
+</html>
